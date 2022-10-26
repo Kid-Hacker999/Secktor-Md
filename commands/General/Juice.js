@@ -1,7 +1,7 @@
 const { tlang } = require('../../lib')
 
 module.exports = {
-   name: 'chat',
+   name: 'juice',
    category: 'general',
    desc: 'Chat with an AI',
    async exec(citel, Void,args) {
