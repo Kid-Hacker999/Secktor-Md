@@ -37,28 +37,28 @@ module.exports = {
                     category[info.category].push(info);
                 }
             }
-let str = `╭━━〘 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〙━━──⊷`     
+let str = `╔══✤ ❲ `+ fancytext(Config.ownername.split(' ')[0],58) +` ❳ ═══✤`     
 str+=
 `
-┃ *Hello, ${citel.pushName}*
-┃ *This is ${tlang().title}*
-┃ *A whatsapp bot developed*
-┃ *by ${Config.ownername}*
-┃ 𝙼𝚢 𝚞𝚜𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚛𝚎
-┃ 𝚕𝚒𝚜𝚝𝚎𝚍 𝚋𝚎𝚕𝚘𝚠
-╰━━━━━━━━━━━──⊷\n`
+║ *Hello, ${citel.pushName}*
+║ *This is ${tlang().title}*
+║ *A whatsapp bot developed*
+║ *by ${Config.ownername}*
+║ 𝙼𝚢 𝚞𝚜𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚛𝚎
+║ 𝚕𝚒𝚜𝚝𝚎𝚍 𝚋𝚎𝚕𝚘𝚠
+╚══════════════✤\n`
             const keys = Object.keys(category);
- str += `╭───『 `+ fancytext('Commands',57)+`』──◆`
+ str += `╔══✤『 `+ fancytext('Commands',57)+`』══◆`
 for (const key of keys) {       
 str += `
-┃ ⿻ ╭─────────────◆
-┃ ⿻ │ ⦿---- ${tiny(key)} ----⦿
-┃ ⿻ ╰┬────────────◆
-┃ ⿻ ┌┤ ${category[key].map((cmd, idx) =>`
-┃ ⿻ │ ✭ ${idx + 1}. `+`${cmd.name}`)}
-┃ ⿻ ╰─────────────◆`
+║┌─────────────◆
+║│ ⦿---- ${tiny(key)} ----⦿
+║└┬────────────◆
+║┌┤ ${category[key].map((cmd, idx) =>`
+║│ ✠ ${idx + 1}. `+`${cmd.name}`)}
+║└─────────────◆`
             }
-str += `\n╰━━━━━━━━━━━──⊷\n`
+str += `\n╚══════════════✤\n`
 str += `_🔖Send ${prefix}help <command name> to get detailed information of specific command._\n*📍Eg:* _${prefix}help anime_`;
             let generatebutton = [{
 					buttonId: `${prefix}owner`,
