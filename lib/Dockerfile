@@ -1,4 +1,4 @@
-FROM quay.io/kid-hacker999/secktor
+FROM quay.io/kid-hacker999/secktor-md
 RUN git clone https://github.com/kid-hacker999/secktor-md /root/kid-hacker999
 WORKDIR /root/kid-hacker999/
 RUN yarn install --network-concurrency 1
